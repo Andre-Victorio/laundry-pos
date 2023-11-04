@@ -146,10 +146,7 @@ $('#process-laundry').submit(function(e){
                 setTimeout(function(){
                     location.reload()
                 },800)
-            } else{
-                alert("Error! Unable to save data.");
-            }
-                
+            }  
         }
     });
 

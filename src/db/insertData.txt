@@ -1,0 +1,29 @@
+BEGIN
+DECLARE i INT DEFAULT 31; 
+WHILE (i <= 200) DO
+    INSERT INTO `orders` (`order_id`, `customer_firstname`, `customer_lastname`, `customer_phone`, `discount`, `grand_total`, `amount_received`, `amount_change`, `date`, `time`, `employee_id`) 
+    VALUES (NULL, NULL, NULL, NULL, '0', '70', '70', '0', CURDATE(), CURTIME(), '1');
+	
+    INSERT INTO `order_details` (`order_id`, `product_id`, `quantity`, `total`) 
+    VALUES (i, '1', '1', '70');
+    SET i = i+1;
+END WHILE;
+END
+
+
+
+/*------- INSERT -------------------------------------------------------------------------------------------*/
+DELIMITER //  
+CREATE PROCEDURE insertData()   
+BEGIN
+DECLARE i INT DEFAULT 27; 
+WHILE (i <= 100) DO
+    INSERT INTO `orders` (`order_id`, `customer_firstname`, `customer_lastname`, `customer_phone`, `discount`, `grand_total`, `amount_received`, `amount_change`, `date`, `time`, `employee_id`) 
+    VALUES (NULL, NULL, NULL, NULL, '0', '70', '70', '0', CURDATE(), CURTIME(), '1');
+	
+    INSERT INTO `order_details` (`order_id`, `product_id`, `quantity`, `total`) 
+    VALUES (i, '1', '1', '70');
+    SET i = i+1;
+END WHILE;
+END;
+//  

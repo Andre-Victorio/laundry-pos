@@ -25,7 +25,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="orders.php">
                         <i class="fa-solid fa-receipt fa-xl"></i> 
                         <span>ORDERS</span> 
                     </a>
@@ -37,7 +37,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="user_list.php">
                         <i class="fa-solid fa-user-group fa-xl"></i> 
                         <span>USER LIST</span> 
                     </a>
@@ -50,7 +50,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="../logout.php">
                         <i class="fa-solid fa-arrow-right-from-bracket fa-xl"></i> 
-                        <span>SIGN OUT </span>
+                        <span>SIGN OUT</span>
                     </a>
                 </li>
             </ul>

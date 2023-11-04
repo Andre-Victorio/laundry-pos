@@ -51,7 +51,13 @@ input[type=text], input[type=password]{
     font-size: 20px;
     margin-bottom: 30px;
     border: 0;
-    border-bottom: 1px solid #a8aaac;
+    border-bottom: 2px solid #a8aaac;
+    transition: 0.35s ease-in;
+}
+
+input[type="password"]:focus-visible,
+input[type="text"]:focus-visible{
+    outline: 0!important;
 }
 
 ::placeholder{
@@ -68,4 +74,40 @@ input[type=submit]{
     margin: 30px auto 0;
     border: 0;
     border-radius: 36px;
+}
+
+/*---- Input Password --------------------------*/
+
+.input-password{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1px 2px;
+    background: white;
+    border: 0;
+    border-bottom: 2px solid #a8aaac;
+    margin-bottom: 30px;
+    transition: 0.35s ease-out;
+}
+  
+.input-password input[type="password"],
+.input-password input[type="text"]{
+    padding: 0!important;
+    border: 0!important;
+    border-radius: 0!important;
+    margin: 0!important;
+}
+  
+.input-password i{
+    color: black;
+    cursor: pointer;
+}
+
+
+.input-password:focus-within,
+.input-password:hover,
+input[type="text"]:focus-within,
+input[type="text"]:hover
+{
+    border-color: #435363;
 }

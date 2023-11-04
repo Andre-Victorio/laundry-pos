@@ -16,6 +16,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+        <link rel="stylesheet" href="../src/css/fontawesome/css/all.min.css">
+        <link rel="stylesheet" href="../src/css/fontawesome/css/fontawesome.min.css">
         <link rel="stylesheet" href="../src/css/bootstrap/bootstrap.min.css">
         <link rel="stylesheet" href="../src/css/style-index.css">
         <script src="../src/js/bootstrap/bootstrap.js"></script>
@@ -32,12 +34,16 @@
                 <form id="signinForm">
                     <h1>Login</h1>
                     <input type="text" placeholder="Username" name="username" required>
-                    <input type="password" placeholder="Password" name="password" required>
+                    <div class="input-password">
+                        <input type="password" placeholder="Password" name="password" required>
+                        <i class="fas fa-eye"></i>
+                    </div>
                     <input type="submit" value="LOGIN">
                 </form>
 
             </div>
         </div>
+        <script type="text/javascript" src="../src/js/password_visibility.js"></script>
         <script type="text/javascript" src="../src/js/auth.js"></script>
     </body>
 </html>

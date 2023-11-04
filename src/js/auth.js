@@ -20,3 +20,22 @@ $('#signinForm').submit(function(e){
     });
     e.preventDefault();
 })
+
+
+$('#newUser').submit(function(e){
+    var data = $("#newUser").serialize();
+    $.ajax({
+        type : 'POST',
+        url : '../../src/php/create_user.php',
+        data : data,
+        success : function(response) {
+            var res = JSON.parse(response);
+            alert(res["message"]);
+            if(res["status"] == 200){
+                // $('#newUser')[0].reset();
+                location.reload();
+            }
+        }
+    });
+    e.preventDefault();
+})

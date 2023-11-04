@@ -207,59 +207,6 @@ td div i:hover{
 /*-------------- Buttons -----------------*/
 /*----------------------------------------*/
 
-.btn-primary-light {
-    --bs-btn-color: #fff;
-    --bs-btn-bg: #58C2FE;
-    --bs-btn-border-color: #58C2FE;
-    --bs-btn-hover-color: #fff;
-    --bs-btn-hover-bg: #53b6f0;
-    --bs-btn-hover-border-color: #53b6f0;
-    --bs-btn-focus-shadow-rgb: 49,132,253;
-    --bs-btn-active-color: #fff;
-    --bs-btn-active-bg: #4ea7db;
-    --bs-btn-active-border-color: #4ea7db;
-    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-    --bs-btn-disabled-color: #fff;
-    --bs-btn-disabled-bg: #4aa5da;
-    --bs-btn-disabled-border-color: #4aa5da;
-}
-
-.btn-success-light {
-    --bs-btn-color: #fff;
-    --bs-btn-bg: #61CB65;
-    --bs-btn-border-color: #61CB65;
-    --bs-btn-hover-color: #fff;
-    --bs-btn-hover-bg: #59b65c;
-    --bs-btn-hover-border-color: #59b65c;
-    --bs-btn-focus-shadow-rgb: 49,132,253;
-    --bs-btn-active-color: #fff;
-    --bs-btn-active-bg: #50a353;
-    --bs-btn-active-border-color: #50a353;
-    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-    --bs-btn-disabled-color: #fff;
-    --bs-btn-disabled-bg: #418644;
-    --bs-btn-disabled-border-color: #418644;
-}
-
-
-.btn-custom {
-    --bs-btn-color: white;
-    --bs-btn-bg: #B373E4;
-    --bs-btn-border-color: #B373E4;
-    --bs-btn-hover-color: white;
-    --bs-btn-hover-bg: #a86bd6;
-    --bs-btn-hover-border-color: #a86bd6;
-    --bs-btn-focus-shadow-rgb: 60,153,110;
-    --bs-btn-active-color: white;
-    --bs-btn-active-bg: #965fc0;
-    --bs-btn-active-border-color: #965fc0;
-    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-    --bs-btn-disabled-color: #afaeae;
-    --bs-btn-disabled-bg: #7d4fa0;
-    --bs-btn-disabled-border-color: #7d4fa0;
-}
-
-
 @media (min-width: 1030px){
     .btn-primary-light, .btn-success-light,
     .btn-warning, .btn-custom {
