@@ -75,9 +75,9 @@
                                         ?>
                                         <tr>
                                             <td><?php echo $line['product_name']?></td>
-                                            <td><?php echo $line['price']?></td>
+                                            <td>₱ <?php echo $line['price']?></td>
                                             <td><?php echo $line['quantity']?></td>
-                                            <td><?php echo $line['total']?></td>
+                                            <td>₱ <?php echo $line['total']?></td>
                                         </tr>
                                         <?php
                                             }}
@@ -89,19 +89,19 @@
                                 <table class="o-bill">
                                     <tr>
                                         <td class="t-50">Discount</td>
-                                        <td><?php echo $row['discount'] ?></td>
+                                        <td>₱ <?php echo $row['discount'] ?></td>
                                     </tr>
                                     <tr>
                                         <td><b>Grand Total</b></td>
-                                        <td><?php echo $row['grand_total'] ?></td>
+                                        <td>₱ <?php echo $row['grand_total'] ?></td>
                                     </tr>
                                     <tr>
                                         <td>Amount Received</td>
-                                        <td><?php echo $row['amount_received'] ?></td>
+                                        <td>₱ <?php echo $row['amount_received'] ?></td>
                                     </tr>
                                     <tr>
                                         <td>Change</td>
-                                        <td><?php echo $row['amount_change'] ?></td>
+                                        <td>₱ <?php echo $row['amount_change'] ?></td>
                                     </tr>
                                 </table>
                             </div>

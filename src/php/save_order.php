@@ -51,7 +51,10 @@
                 $items .= ", product_id = '$prod_id[$key]' ";
                 $items .= ", quantity = '$prod_qty[$key]' ";
                 $items .= ", total = '$prod_total[$key]' ";
-                $sql2 = $con->query("INSERT INTO order_details set $items");
+                $sql2 = "INSERT INTO order_details set $items";
+                if($con->query($sql2) === TRUE){
+                    $sql3 = $con->query("UPDATE products SET stock = stock - '$prod_qty[$key]' WHERE product_id = '$prod_id[$key]';");
+                }
             }
             $status = 200;
             $retVal = "Order added successfully.";

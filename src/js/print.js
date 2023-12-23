@@ -84,7 +84,7 @@ function printArea(){
                     }
 
                     .o-bill tr td:nth-child(2){
-                        text-align: center;
+                        text-align: right;
                     }
 
         

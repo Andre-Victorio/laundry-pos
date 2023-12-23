@@ -31,7 +31,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="products.php">
                         <i class="fa-solid fa-inbox fa-xl"></i> 
                         <span>CONSUMABLES</span> 
                     </a>

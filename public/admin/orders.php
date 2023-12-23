@@ -80,7 +80,7 @@
                         <thead>
                             <tr>
                                 <th>Order No.</th>
-                                <th class="t-date">Date</th>
+                                <th>Date</th>
                                 <th>Customer Name</th>
                                 <th>Customer Phone</th>
                                 <th>Total</th>
@@ -89,31 +89,29 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
                                 <?php
-                            
-                                while ($row = mysqli_fetch_assoc($result)) {
-                                
-                                
+                                    while ($row = mysqli_fetch_assoc($result)) {
                                 ?>	
-                                    <td><?php echo $row['order_id']?></td>
-                                    <td><?php echo $row['date']?></td>
-                                    <td><?php echo $row['customer_firstname'] . " " . $row['customer_lastname']?></td>
-                                    <td><?php echo $row['customer_phone']?></td>
-                                    <td><?php echo $row['grand_total']?></td>
-                                    <td><?php echo $row['first_name'] . " " . $row['last_name']?></td>
+                                
+                            <tr>
+                                <td><?php echo $row['order_id']?></td>
+                                <td><?php echo $row['date']?></td>
+                                <td><?php echo $row['customer_firstname'] . " " . $row['customer_lastname']?></td>
+                                <td><?php echo $row['customer_phone']?></td>
+                                <td>₱ <?php echo $row['grand_total']?></td>
+                                <td><?php echo $row['first_name'] . " " . $row['last_name']?></td>
                                 <td>
-                                        <a href="details.php?order_id=<?php echo $row['order_id']; ?>"> 
-                                            <button class="btn btn-primary me-1">Details</button>
-                                        </a>
-                                        <button onclick="deleteOrder(<?php echo $row['order_id']?>)" class="btn btn-danger">Delete</button>
-                                </tr>
-                                    
+                                    <a href="details.php?order_id=<?php echo $row['order_id']; ?>"> 
+                                        <button class="btn btn-primary me-1">Details</button>
+                                    </a>
+                                    <button onclick="deleteOrder(<?php echo $row['order_id']?>)" class="btn btn-danger">Delete</button>
+                                </td>
+                            </tr>
+
                                 <?php
                                     }
                                 mysqli_close($con);
                                 ?>
-                            </tr>
                         </tbody>
                     </table>
                     <div class="pagination">

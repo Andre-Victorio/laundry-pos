@@ -2,6 +2,9 @@
 
     $totalPages = ceil($totalRecords / $limit);
     
+    $currentURL = $_SERVER['PHP_SELF'];
+    $filename = basename($currentURL);
+    
     if($totalPages > 1){
         $mod = $page % 10;
 
@@ -12,7 +15,7 @@
         $lastPages = $mod1 == 0? $totalPages - 10: $totalPages - $mod1;
 
         if ($page > 10) {
-            echo '<a href="orders.php" class="border"><i class="fas fa-angles-left"></i></a>';
+            echo '<a href="' . $filename . '" class="border"><i class="fas fa-angles-left"></i></a>';
             
             if($mod == 0){
                 echo '<a href="?page=' . $page - 10 . '" class="border"><i class="fas fa-angle-left"></i></a>';
@@ -25,7 +28,7 @@
             if($page == 1){
                 echo '<a href="" class="current-page">1</a>';
             } else{
-                echo '<a href="orders.php">1</a>';
+                echo '<a href="' . $filename . '">1</a>';
             }
 
             $min = 2;
